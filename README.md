@@ -10,9 +10,15 @@
 - `npm install -s express`
 - `npm install -s body-parser`
 - `npm install -s path`
+- `npm install -s multer`
+- `npm install -s bcrypt`
+- `npm install -s jsonwebtoken`
 
-3. Install `nodemon` globally - you can skip this step if your system already has `nodemon` installed..
+1. Install `nodemon` globally - you can skip this step if your system already has `nodemon` installed..
 - `npm install -f nodemon`
 
 ## Run project
 - Run `nodemon app.js` in project folder
+
+
+## Observations
