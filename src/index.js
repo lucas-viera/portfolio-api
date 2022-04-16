@@ -1,6 +1,6 @@
 const express = require ('express');
 const app = express();
-const app_port = 3000;
+const PORT = 3000;
 const bodyParser = require("body-parser");
 const path = require("path");
 
@@ -57,6 +57,6 @@ const projectsRouter = require ("./routers/projects.router");
 app.all("/*", notFoundMiddleware);
 app.use(errorsMiddleware);
 
-var server = app.listen(app_port, ()=>{
+var server = app.listen(PORT, ()=>{
     console.log('Sever running on port', server.address().port)
 });
