@@ -27,6 +27,10 @@ app.get('/education', (request, response) =>{
     response.sendStatus(200);
 });
 
+// Experience
+app.get('/jobs', (request, response) =>{
+    response.sendStatus(200);
+});
 
 
 app.listen(app_port);
