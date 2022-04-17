@@ -10,7 +10,7 @@
 - `npm install -s express`
 - `npm install -s body-parser`
 - `npm install -s path`
-- `npm install -s multer`
+- `npm install -s multer`   (maybe we won't use it)
 - `npm install -s bcrypt`
 - `npm install -s jsonwebtoken`
 
@@ -22,3 +22,5 @@
 
 
 ## Observations
+- Authentication will be implemented for only one user with 'admin' role as a proof of concept feature.
+- Nodemailer useful [website](https://nodemailer.com/about/)
