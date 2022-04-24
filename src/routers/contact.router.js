@@ -1,9 +1,9 @@
 const express = require("express");
 const { append } = require("express/lib/response");
-const multer = require("multer");
 const path = require("path");
 const contactRouter = express.Router();
 
+contactRouter.post(('submit-form'))
 
 
 module.exports = contactRouter;

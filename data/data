@@ -1,0 +1,25 @@
+Table jobs as J {
+  id int [pk, increment]
+  company_name varchar
+  title varchar
+  description varchar
+  start_date datetime
+  end_time datetime
+  location varchar
+}
+
+Table projects as P {
+  id int [pk, increment]
+  name varchar
+  description varchar
+  creation_date datetime
+  repository varchar
+}
+
+Table education as E {
+  id int [pk, increment]
+  title varchar
+  description varchar
+  start_date datetime
+  end_date datetime
+}

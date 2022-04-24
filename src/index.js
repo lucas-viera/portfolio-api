@@ -6,12 +6,15 @@ const bodyParser = require("body-parser");
 const path = require("path");
 
 //Environment variables
-require("dotenv").config();
+//require("dotenv").config();
+
+//Static access
+api.use(express.static(path.join(__dirname, "..", "public")));
 
 // Middlewares - requirements
 const loggerMiddleware = require("./middlewares/logger.middleware");
 const notFoundMiddleware = require("./middlewares/not-found.middleware");
-const errorsMiddleware = require("./middlewares/errors.middlware");
+const errorsMiddleware = require("./middlewares/errors.middleware");
 
 // Routers - requirements
 //const authRouter = require("./routers/auth.router");
