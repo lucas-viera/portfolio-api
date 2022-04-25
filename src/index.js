@@ -18,7 +18,7 @@ const errorsMiddleware = require("./middlewares/errors.middleware");
 
 // Routers - requirements
 //const authRouter = require("./routers/auth.router");
-const aboutRouter = require("./routers/about.router");
+const aboutHome = require("./routers/home.router");
 const contactRouter = require("./routers/contact.router");
 const educationRouter = require("./routers/education.router");
 const experienceRouter = require("./routers/experience.router")
@@ -35,10 +35,10 @@ app.all("/*", notFoundMiddleware);
 app.use(errorsMiddleware);
 
 // Routers - usage
-app.use("/about", aboutRouter);
+app.use("/home", aboutHome);
 app.use("/contact", contactRouter);
 app.use("/education", educationRouter);
-app.use("/experience", experienceRouter);
+app.use("/tech", experienceRouter);
 app.use("/projects", projectsRouter);
 
 //Others - errors
